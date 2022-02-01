@@ -1,28 +1,8 @@
 import React, { Component } from 'react';
+import  Chart  from "./Chart";
+import Card from "./Card";
 import "./App.css";
 
-function Chart(props) {
-  return (
-    <div className="card">
-    <div className="card-header"><i className={props.icon} /> {props.title} </div>
-    <div className="card-body"><canvas id="myAreaChart" />
-    </div>
-  </div>
-  );
-}
-function Card(props) {
-  return (
-    <div className="card bg-gumbo">
-    <div className="card-body text-center">
-      <h5 className="card-title">{props.text}</h5>
-      <h5 className="card-title">{props.num}</h5>
-    </div>
-    <div className="card-footer text-start">
-      <a className="text-white" href="#">{props.detail}</a>
-    </div>
-  </div>
-  ); 
-}
 
 export default class App extends Component {
   render() {
